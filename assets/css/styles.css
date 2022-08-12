@@ -468,15 +468,19 @@ img {
 }
 
 .skills__web-exploit{
-  width: 30%;
+  width: 81%;
 }
 
 .skills__linux-cyber{
-  width: 75%;
+  width: 85%;
 }
 
 .skills__network-exploit{
-  width: 40%;
+  width: 81%;
+}
+
+.skills__priv-escalation{
+  width: 70%;
 }
 
 .skills__micro-controller{
