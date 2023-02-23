@@ -11,8 +11,9 @@ SITELOGO = "images/profile.png"
 BROWSER_COLOR = "#333"
 ROBOTS = "index, follow"
 
-THEME="Flex"
+THEME = "Flex"
 PATH = 'content'
+TYPOGRIFY = True
 
 TIMEZONE = 'Asia/Manila'
 
@@ -48,9 +49,7 @@ MENUITEMS = (
 )
 
 COPYRIGHT_YEAR = datetime.now().year
-DEFAULT_PAGINATION = 10
-
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
