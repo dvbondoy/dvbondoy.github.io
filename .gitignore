@@ -1,5 +1,4 @@
 .venv
 output
-content
 Makefile
-*.py
+__pycache__
