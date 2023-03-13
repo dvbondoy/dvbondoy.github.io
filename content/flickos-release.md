@@ -1,6 +1,6 @@
 Title: FlickOS is now available
 Date: 2023-03-12
-Category: OS
+Category: operating system
 
 FlickOS is an operating system made for aging computers but also good for new computers. It is light, clean and elegant operating system based on Ubuntu and LXLE so it has a very  stable foundation. I made sure that the operating system is lean and fast as much possible so you could use your system resources for running essential software.
 
