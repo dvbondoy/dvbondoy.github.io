@@ -29,7 +29,8 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (('Portfolio', 'https://dvbondoy.github.io/portfolio/'),
          ('TryHackme', 'https://tryhackme.com/p/dvbondoy/'),
-         ('FreeCodeCamp', 'https://www.freecodecamp.org/certification/fcc6df760fa-6dda-4303-ae2a-070af6bcae9d/responsive-web-design/'),)
+         ('FreeCodeCamp', 'https://www.freecodecamp.org/certification/fcc6df760fa-6dda-4303-ae2a-070af6bcae9d/responsive-web-design/'),
+         ('SourceForge', 'https://sourceforge.net/projects/flickos/'),)
 
 # Social widget
 GITHUB_CORNER_URL = "https://github.com/dvbondoy"
