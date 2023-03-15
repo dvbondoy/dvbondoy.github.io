@@ -2,7 +2,8 @@ from datetime import datetime
 
 AUTHOR = 'dvbondoy'
 SITENAME = 'Dioscoro III'
-SITEURL = 'https://dvbondoy.github.io'
+SITEURL = 'https://dioscoro.co.uk'
+#SITEURL = 'https://dvbondoy.github.io'
 SITETITLE = "Dioscoro III"
 SITESUBTITLE = "Random Thoughts"
 SITEDESCRIPTION = "Dioscoro Random Thoughts"
@@ -30,7 +31,7 @@ AUTHOR_FEED_RSS = None
 LINKS = (('Portfolio', 'https://dvbondoy.github.io/portfolio/'),
          ('TryHackme', 'https://tryhackme.com/p/dvbondoy/'),
          ('FreeCodeCamp', 'https://www.freecodecamp.org/certification/fcc6df760fa-6dda-4303-ae2a-070af6bcae9d/responsive-web-design/'),
-         ('SourceForge', 'https://sourceforge.net/projects/flickos/'),)
+         ('FlickOS', 'https://sourceforge.net/projects/flickos/'),)
 
 # Social widget
 GITHUB_CORNER_URL = "https://github.com/dvbondoy"

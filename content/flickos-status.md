@@ -14,4 +14,4 @@ Current development status of FlickOS is at full speed. I created a utility prog
 ## Layout Switcher
 ![Layout Switcher](/images/layout-switcher.png)
 
-Verions 1.1 will be out soon, but if you can not wait you can download version 1.0 [here](https://sourceforge.net/projects/flickos/files/flick-layout-switcher.deb/download). You can also download [layout-switcher.deb](https://sourceforge.net/projects/flickos/files/flick-layout-switcher.deb/download) because it not yet built-in in version 1.0.
+Verions 1.1 will be out soon, but if you can not wait you can download version 1.0 [here](https://sourceforge.net/projects/flickos/files/flick-layout-switcher.deb/download). You can also download [layout-switcher.deb](https://sourceforge.net/projects/flickos/files/flick-layout-switcher.deb/download) because it's not yet built-in in version 1.0.
