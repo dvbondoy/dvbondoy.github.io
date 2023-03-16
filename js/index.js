@@ -11,9 +11,7 @@ function setVal(){
     
     const status = () => {
         stat.then((a) => {
-            console.log(a);
             document.getElementById("total").innerHTML = a.total;
-            console.log(a.total);
         });
     }
     
