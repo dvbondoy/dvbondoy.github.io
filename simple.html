@@ -54,6 +54,9 @@
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
+  .modal {
+    color:#2f2f2f;
+  }
   </style>
 </head>
 <body>
@@ -74,9 +77,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="https://flickos.net/blog/">Blog</a></li>
+        <li data-toggle="modal" data-target="#myModal"><a href="#" >Support</a></li>
+        <li data-toggle="modal" data-target="#myModal"><a href="#">About</a></li>
       </ul>
     </div>
   </div>
@@ -88,30 +91,29 @@
     <h1 class="margin" style="font-family: 'Lobster Two', cursive;">Flick OS</h3>
   </div>
   <div>
-    <!-- <img src="images/notebook.jpg" alt=""> -->
     <img src="images/notebook.png" class="img-responsive" style="display:inline" alt="Bird" width="750" height="750">
   </div>
   <h3>Light, elegant, and sustainable OS</h3>
   <div style="margin-top: 4rem;">
-    <a href="#" class="btn btn-primary btn-lg">
+    <a href="https://sourceforge.net/projects/flickos/files/latest/download" class="btn btn-primary btn-lg">
       <span class="glyphicon glyphicon-download"></span> Download now
     </a>
   </div>
   <p>
-    <a href="#" class="small" style="color: whitesmoke;"><small>System requirements</small></a>
+    <a href="#" data-toggle="modal" data-target="#sysreq" class="small" style="color: whitesmoke;"><small>System requirements</small></a>
   </p>
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin">Why Flick OS?</h3>
+  <h3 class="margin" style="font-weight: bold;">Why Flick OS?</h3>
   <p>Flick OS is designed to be as light as possible so that it could be used for aging computers, or even the latest computers for it to be more sustainable. And because FlickOS only consumes around 300 MB of RAM and 1% CPU, your laptop battery will be more efficient and last longer. As a result, users can use system resources for running applications that matter for productivity. But don't fret, FlickOs still look beautiful and modern without the unnecessary window animations and applications. You can even customize the look and feel with just a few clicks using the built-in layout switcher.</p>
   
 </div>
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Notable Features</h3><br>
+  <h3 class="margin" style="font-weight: bold;">Notable Features</h3><br>
   <div class="row">
     <div class="col-sm-4">
       <p> Classic, Elementary and LXLE layout.</p>
@@ -130,7 +132,6 @@
           </div>
         </div>
       </div>
-      <!-- <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image"> -->
     </div>
     <div class="col-sm-4"> 
       <p>Appgrid Software manager</p>
@@ -148,8 +149,64 @@
   <p>Copyright 2023</a></p> 
 </footer>
 
-<script>
-  $("#layout-carousel").carousel();
-</script>
+<!-- Trigger the modal with a button -->
+<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>This section is under construction. Check again later.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="sysreq" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Minimum System Requirements</h4>
+      </div>
+      <div class="modal-body">
+        <!-- <h5>Minimum system requirements</h3> -->
+        <h5>Processor: <small>Pentium/i3</small></h5>
+        <h5>Memory: <small>1 GB</small></h5>
+        <h5>Storage: <small>15 GB</small></h5>
+        <h5>Display: <small>1024x768</small></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <script>
+    
+    $(document).ready(function(){
+
+      $("#layout-carousel").carousel();
+
+    
+    });
+    
+  </script>
 </body>
 </html>
