@@ -116,6 +116,7 @@
 <div class="container-fluid bg-3 text-center">    
   <h3 class="margin" style="font-weight: bold;">Notable Features</h3><br>
   <div class="row">
+    <a href="#" data-toggle="modal" data-target="#switcherModal">
     <div class="col-sm-4">
       <p> Classic, Elementary and LXLE layout.</p>
       <div id="layout-carousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
@@ -134,9 +135,12 @@
         </div>
       </div>
     </div>
+    </a>
     <div class="col-sm-4"> 
       <p>Appgrid Software manager</p>
-      <img src="images/appgrid.png" class="img-responsive margin" style="width:100%" alt="Image">
+      <a href="#" data-toggle="modal" data-target="#appgridModal">
+        <img src="images/appgrid.png" class="img-responsive margin" style="width:100%" alt="Image">
+      </a>
     </div>
     <div class="col-sm-4"> 
       <p>Free and Open-source</p>
@@ -165,6 +169,57 @@
       </div>
       <div class="modal-body">
         <p>This section is under construction. Check again later.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="switcherModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Layout Switcher</h4>
+      </div>
+      <div class="modal-body">
+        <img src="images/layout-switcher.png" alt="">
+        <p>The layout switcher is made explicitly for Flick OS to quickly change the desktop layout. You can find it under the Utilities menu.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Appgrid Modal -->
+<div id="appgridModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Appgrid</h4>
+      </div>
+      <div class="modal-body">
+        <h3>App Grid is an alternative to the Software Center.</h3>
+        <p>It’s fast!
+          Written from scratch, App Grid delivers stunning startup speed, and swift reactions throughout.
+        </p>
+        <p>
+          It’s elegant!
+          A clean and simple design makes App Grid a joy to use.
+        </p>
+        <a href="https://appgrid.org">App Grid website</a>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
