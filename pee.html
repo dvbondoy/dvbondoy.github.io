@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flick the Sustainable OS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  .modal {
+    color:#2f2f2f;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a  class="" href="#">
+        <img class="navbar-brand" src="images/flickos-logo.png" class="img-responsive
+        " width="48" height="48" alt="" style="padding: 1px 1px;">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://flickos.net/blog/">Blog</a></li>
+        <li data-toggle="modal" data-target="#myModal"><a href="#" >Support</a></li>
+        <li data-toggle="modal" data-target="#myModal"><a href="#">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Containerr -->
+<div class="container-fluid bg-1 text-center">
+  <div>
+    <h1 class="margin" style="font-family: 'Lobster Two', cursive;">Flick OS</h3>
+  </div>
+  <div>
+    <img src="images/notebook.png" class="img-responsive" style="display:inline" alt="Bird" width="750" height="750">
+  </div>
+  <h3>Light, elegant, and sustainable OS</h3>
+  <div style="margin-top: 4rem;">
+    <a href="https://sourceforge.net/projects/flickos/files/latest/download" class="btn btn-primary btn-lg">
+      <span class="glyphicon glyphicon-download"></span> Download Now
+    </a>
+  </div>
+  <div>
+    <a href="https://sourceforge.net/projects/flickos/files/latest/download"><img alt="Download FlickOS" src="https://img.shields.io/sourceforge/dm/flickos.svg" ></a>
+  </div>
+  <p>
+    <a href="#" data-toggle="modal" data-target="#sysreq" class="small" style="color: whitesmoke;"><small>System requirements</small></a>
+  </p>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin" style="font-weight: bold;">Why Flick OS?</h3>
+  <p>
+    FlickOS is designed to be as light as possible so it can be used for older computers and save them from going to landfill. Thus your device will be more energy efficient, and system resources be utilized for more crucial tasks. But do not be discouraged by its lightness because FlickOS looks beautiful for old and new computers. Save the environment, revive your old PC and Flick it.
+  </p>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin" style="font-weight: bold;">Notable Features</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="#" data-toggle="modal" data-target="#switcherModal"></a>
+      <p> Classic, Elementary and LXLE layout.</p>
+      <div id="layout-carousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="images/classic.png" alt="Chania">
+          </div>
+      
+          <div class="item">
+            <img src="images/elementary.png" alt="Chania">
+          </div>
+      
+          <div class="item">
+            <img src="images/lxle.png" alt="Flower">
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col-sm-4"> 
+      <p>Appgrid Software manager</p>
+      <a href="#" data-toggle="modal" data-target="#appgridModal">
+        <img src="images/appgrid.png" class="img-responsive margin" style="width:100%" alt="Image">
+      </a>
+    </div>
+    <div class="col-sm-4"> 
+      <p>Free and Open-source</p>
+      <img src="images/open.png" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Copyright 2023</p>
+  <p>Disclaimer: This is a school project that aims to provide information on an environmental issue and to spark collective actions for the preservation and protection of the Earth’s ecosystems.</p>
+  <small>Logo designed by <a href="https://www.dragangrafix.com/">Dragan Grafix and Chris</a></small>
+</footer>
+
+<!-- Trigger the modal with a button -->
+<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Under Construction</h4>
+      </div>
+      <div class="modal-body">
+        <p>This section is under construction. Check again later.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="switcherModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Layout Switcher</h4>
+      </div>
+      <div class="modal-body">
+        <img src="images/layout-switcher.png" alt="">
+        <p>The layout switcher is made explicitly for Flick OS to quickly change the desktop layout. You can find it under the Utilities menu.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Appgrid Modal -->
+<div id="appgridModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Appgrid</h4>
+      </div>
+      <div class="modal-body">
+        <h3>App Grid is an alternative to the Software Center.</h3>
+        <p>It’s fast!
+          Written from scratch, App Grid delivers stunning startup speed, and swift reactions throughout.
+        </p>
+        <p>
+          It’s elegant!
+          A clean and simple design makes App Grid a joy to use.
+        </p>
+        <a href="https://appgrid.org">App Grid website</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="sysreq" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Minimum System Requirements</h4>
+      </div>
+      <div class="modal-body">
+        <!-- <h5>Minimum system requirements</h3> -->
+        <h5>Processor: <small>Pentium/i3</small></h5>
+        <h5>Memory: <small>1 GB</small></h5>
+        <h5>Storage: <small>15 GB</small></h5>
+        <h5>Display: <small>1024x768</small></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <script>
+    
+    $(document).ready(function(){
+
+      $("#layout-carousel").carousel();
+
+    
+    });
+    
+  </script>
+</body>
+</html>
